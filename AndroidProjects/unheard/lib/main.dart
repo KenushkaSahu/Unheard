@@ -5,6 +5,11 @@ import 'aboutus.dart';
 import 'blog.dart';
 import 'healthSupport.dart';
 import 'helpSupport.dart';
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
+}
 
 void main() {
   runApp(const MyApp());
